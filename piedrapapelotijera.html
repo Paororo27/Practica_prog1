@@ -3,6 +3,8 @@
         <head>
             <meta charset="utf-8"/>
             <title>Piedra, papel o tijera</title>
+            <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+            <script></script>
             <script>
                 function aleatorio(min, max) {return Math.floor( Math.random() * (max - min + 1) + min)}
                 //1 es piedra, 2 es papel, 3 es tijera
@@ -11,11 +13,11 @@
                 function eleccion(jugada){
                     let resultado = ""
                     if(jugada == 1){
-                        resultado = "Piedra🥌"
+                        resultado = "Piedra 🪨"
                     } else if (jugada == 2){
-                        resultado = "Papel📄"
+                        resultado = "Papel 📄"
                     } else if (jugada == 3){
-                        resultado = "Tijera ✂"
+                        resultado = "Tijera ✂️"
                     } else {
                         resultado = "MAL ELEGIDO"
                     }
@@ -42,7 +44,7 @@
             </script>
         </head>
         <body>
-            <h1>Piedra, papel o tijera</h1>
+            <h1 class="text-4xl font-bold">Piedra, papel o tijera</h1>
         </body>
     
 </html>
